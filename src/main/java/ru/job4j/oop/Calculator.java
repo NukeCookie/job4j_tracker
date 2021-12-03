@@ -21,8 +21,8 @@ public class Calculator {
     }
 
     public int sumAllOperation(int a) {
-        int c = this.sum(a) + this.multiply(a)
-                + this.minus(a) + this.divide(a);
+        int c = sum(a) + this.multiply(a)
+                + minus(a) + this.divide(a);
         return c;
     }
 
