@@ -33,4 +33,3 @@ public class Profession {
         return birthday;
     }
 }
-//name, surname, education, birthday
