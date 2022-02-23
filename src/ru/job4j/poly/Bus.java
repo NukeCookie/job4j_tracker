@@ -1,4 +1,5 @@
 package ru.job4j.poly;
+import java.util.Scanner;
 
 public class Bus implements Transport {
 
@@ -9,7 +10,7 @@ public class Bus implements Transport {
 
     @Override
     public void passengers(int numberOfPassengers) {
-
+        System.out.println("Количество пассажиров:" + numberOfPassengers);
     }
 
     @Override
