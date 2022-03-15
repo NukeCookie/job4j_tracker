@@ -19,11 +19,6 @@ public class StartUITest {
     }
 
     @Test
-    public void createItem() {
-
-    }
-
-    @Test
     public void whenEditItem() {
         Tracker tracker = new Tracker();
         Item item = new Item("new item");
