@@ -3,6 +3,8 @@ package ru.job4j.search;
 import org.hamcrest.core.Is;
 import org.junit.Assert;
 import org.junit.Test;
+import ru.job4j.search.PriorityQueue;
+import ru.job4j.search.Task;
 
 public class PriorityQueueTest {
     @Test

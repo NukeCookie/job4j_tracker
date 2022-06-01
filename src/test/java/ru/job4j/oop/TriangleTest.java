@@ -3,6 +3,8 @@ package ru.job4j.oop;
 import org.hamcrest.Matchers;
 import org.junit.Assert;
 import org.junit.Test;
+import ru.job4j.oop.Point;
+import ru.job4j.oop.Triangle;
 
 public class TriangleTest {
 

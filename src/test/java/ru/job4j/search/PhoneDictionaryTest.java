@@ -3,6 +3,8 @@ package ru.job4j.search;
 import org.hamcrest.core.Is;
 import org.junit.Assert;
 import org.junit.Test;
+import ru.job4j.search.Person;
+import ru.job4j.search.PhoneDictionary;
 
 import java.util.ArrayList;
 

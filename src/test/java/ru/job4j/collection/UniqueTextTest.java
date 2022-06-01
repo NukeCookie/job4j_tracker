@@ -3,6 +3,7 @@ package ru.job4j.collection;
 import org.hamcrest.core.Is;
 import org.junit.Assert;
 import org.junit.Test;
+import ru.job4j.collection.UniqueText;
 
 public class UniqueTextTest {
 

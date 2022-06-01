@@ -3,6 +3,8 @@ package ru.job4j.pojo;
 import org.hamcrest.Matchers;
 import org.junit.Assert;
 import org.junit.Test;
+import ru.job4j.pojo.Product;
+import ru.job4j.pojo.ShopDrop;
 
 public class ShopDropTest {
     @Test

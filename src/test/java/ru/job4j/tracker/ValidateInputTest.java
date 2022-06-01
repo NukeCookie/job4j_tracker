@@ -4,6 +4,7 @@ package ru.job4j.tracker;
 import org.hamcrest.Matchers;
 import org.junit.Assert;
 import org.junit.Test;
+import ru.job4j.tracker.*;
 
 public class ValidateInputTest {
 

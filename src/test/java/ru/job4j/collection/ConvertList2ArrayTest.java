@@ -3,6 +3,7 @@ package ru.job4j.collection;
 import org.hamcrest.MatcherAssert;
 import org.hamcrest.core.Is;
 import org.junit.Test;
+import ru.job4j.collection.ConvertList2Array;
 
 import java.util.Arrays;
 
