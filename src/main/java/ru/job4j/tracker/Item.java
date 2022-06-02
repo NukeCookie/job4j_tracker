@@ -1,9 +1,15 @@
 package ru.job4j.tracker;
 
+import ru.job4j.bank.Account;
+
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
+import java.util.Arrays;
+import java.util.Collections;
+import java.util.List;
+import java.util.Objects;
 
-public class Item {
+public class Item implements Comparable<Item> {
     private static final DateTimeFormatter
             FORMATTER = DateTimeFormatter.ofPattern("dd-MMMM-EEEE-yyyy HH:mm:ss");
 
@@ -52,5 +58,27 @@ public class Item {
                 + ", name='" + name + '\''
                 + ", created=" + created.format(FORMATTER)
                 + '}';
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) {
+            return true;
+        }
+        if (o == null || getClass() != o.getClass()) {
+            return false;
+        }
+        Item item = (Item) o;
+        return Objects.equals(id, item.id);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(id);
+    }
+
+    @Override
+    public int compareTo(Item another) {
+        return Integer.compare(id, another.id);
     }
 }
