@@ -5,9 +5,14 @@ import java.util.Comparator;
 public class StringCompare implements Comparator<String> {
     @Override
     public int compare(String left, String right) {
-        String[] leftArray = left.split("");
-        String[] rightArray = left.split("");
-
-        return 0;
+        char[] leftArray = left.toCharArray();
+        char[] rightArray = right.toCharArray();
+        int lengthOfArray = Math.min(leftArray.length, rightArray.length);
+        for (int i = 0; i < lengthOfArray; i++) {
+            if (leftArray[i] != rightArray[i]) {
+                return leftArray[i] - rightArray[i];
+            }
+        }
+        return leftArray.length - rightArray.length;
     }
 }
