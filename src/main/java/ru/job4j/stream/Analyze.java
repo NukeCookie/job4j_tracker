@@ -1,5 +1,6 @@
 package ru.job4j.stream;
 
+import java.util.Comparator;
 import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.stream.Collectors;
@@ -41,7 +42,7 @@ public class Analyze {
                 pupil.getSubjects().stream()
                         .mapToInt(Subject::getScore).sum()
         ))
-                .max(Tuple::compareTo)
+                .max(Comparator.comparingDouble(Tuple::getScore))
                 .orElse(null);
     }
 
@@ -50,12 +51,11 @@ public class Analyze {
                         .stream())
                 .collect(Collectors.groupingBy(
                         Subject::getName,
-                        LinkedHashMap::new,
                         Collectors.summingDouble(Subject::getScore)))
                 .entrySet()
                 .stream()
                 .map(entry -> new Tuple(entry.getKey(), entry.getValue()))
-                .max(Tuple::compareTo)
+                .max(Comparator.comparingDouble(Tuple::getScore))
                 .orElse(null);
     }
 }

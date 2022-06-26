@@ -29,7 +29,7 @@ public class Tuple {
         return Objects.hash(name, score);
     }
 
-    public int compareTo(Tuple tuple) {
-        return Double.compare(this.score, tuple.score);
+    public double getScore() {
+        return score;
     }
 }
